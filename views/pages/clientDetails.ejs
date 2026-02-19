@@ -1,0 +1,12 @@
+<h2>Client Profile</h2>
+
+<div class="profile">
+    <p><strong>Name:</strong> <%= client.name %></p>
+    <p><strong>Email:</strong> <%= client.email %></p>
+    <p><strong>Portfolio:</strong> <%= client.portfolio %></p>
+    <p class="risk <%= client.risk.toLowerCase() %>">
+        <strong>Risk Level:</strong> <%= client.risk %>
+    </p>
+</div>
+
+<a href="/clients">← Back to Clients</a>

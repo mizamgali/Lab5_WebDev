@@ -1,0 +1,24 @@
+<h2>Client Directory</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Portfolio</th>
+        <th>Risk</th>
+        <th>Profile</th>
+    </tr>
+
+    <% clients.forEach(client => { %>
+        <tr>
+            <td><%= client.name %></td>
+            <td><%= client.portfolio %></td>
+            <td class="risk <%= client.risk.toLowerCase() %>">
+                <%= client.risk %>
+            </td>
+            <td>
+                <a href="/clients/<%= client.id %>">View</a>
+            </td>
+        </tr>
+    <% }) %>
+
+</table>
